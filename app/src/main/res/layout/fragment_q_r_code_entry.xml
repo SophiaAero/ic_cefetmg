@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".qrcode.QRCodeEntryFragment">
+
+    <TextView
+        android:id="@+id/codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24000001" />
+
+    <Button
+        android:id="@+id/entrybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F6EDED"
+        android:text="Entrar"
+        android:textColorHighlight="#311B92"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#F4E6E6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/codigo"
+        app:layout_constraintStart_toStartOf="@+id/codigo"
+        app:layout_constraintTop_toBottomOf="@+id/codigo" />
+
+    <EditText
+        android:id="@+id/qrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite QRCode"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/entrybutton"
+        app:layout_constraintEnd_toEndOf="@+id/entrybutton"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/entrybutton"
+        app:layout_constraintTop_toBottomOf="@+id/codigo"
+        app:layout_constraintVertical_bias="0.52" />
+</androidx.constraintlayout.widget.ConstraintLayout>

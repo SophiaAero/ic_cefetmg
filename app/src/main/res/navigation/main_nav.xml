@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/QRCodeEntryFragment">
+
+    <fragment
+        android:id="@+id/QRCodeEntryFragment"
+        android:name="com.sophiamoraes.agora_vai.qrcode.QRCodeEntryFragment"
+        android:label="fragment_q_r_code_entry"
+        tools:layout="@layout/fragment_q_r_code_entry" >
+        <action
+            android:id="@+id/action_QRCodeEntryFragment_to_powerPlugDetailsFragment"
+            app:destination="@id/powerPlugDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/powerPlugDetailsFragment"
+        android:name="com.sophiamoraes.agora_vai.PowerPlugDetailsFragment"
+        android:label="fragment_current_power_plug"
+        tools:layout="@layout/fragment_current_power_plug" />
+</navigation>
